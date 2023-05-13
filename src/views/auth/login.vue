@@ -9,10 +9,13 @@
             <h1 class="text-black font-bold text-4xl mb-1">
               Hey, Welcome Back!
             </h1>
-            <p class="text-[#8F9BB3] mb-14 3xl:text-xl text-lg">
+            <p class="text-[#8F9BB3] mb-7 3xl:text-xl text-lg">
               Please Sign in here to your Account,<br />
               Have your landing pages online in minutes.
             </p>
+            <div class="mb-7">
+              <LanguageDropdown background="bg-white" />
+            </div>
             <div class="relative 3xl:mb-14 mb-10">
               <svg
                 class="auth-input-icon"
@@ -70,6 +73,7 @@
 <script>
 import AuthCover from "../../components/AuthCover.vue";
 import { RouterLink } from "vue-router";
+import LanguageDropdown from "../../components/LanguageDropdown.vue"
 export default {
   name: "AuthLogin",
   props: {
@@ -78,6 +82,7 @@ export default {
   components: {
     AuthCover,
     RouterLink,
+    LanguageDropdown
   },
 };
 </script>

@@ -13,6 +13,9 @@
               <p class="text-[#8F9BB3] 3xl:text-xl 2xl:text-lg text-base">
                 Please Sign up here to your Account.
               </p>
+              <div class="mt-2">
+                <LanguageDropdown background="bg-white" />
+              </div>
             </div>
             <div
               class="w-[100px] h-[100px] bg-white rounded-2xl flex-center relative"
@@ -228,10 +231,12 @@
 
 <script>
 import AuthCover from "../../components/AuthCover.vue";
+import LanguageDropdown from "../../components/LanguageDropdown.vue"
 export default {
   name: "AuthRegister",
   components: {
     AuthCover,
+    LanguageDropdown
   },
 };
 </script>
